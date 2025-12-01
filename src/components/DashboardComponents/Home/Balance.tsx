@@ -68,6 +68,7 @@ export default function Balance({ currencies, selected, setSelected }: BalancePr
           </div>
           <div>
             {/* ATM Card */}
+            <AtmCard />
           </div>
         </div>
       </div>
