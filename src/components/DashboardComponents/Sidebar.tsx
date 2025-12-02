@@ -33,8 +33,11 @@ export default function Sidebar() {
     <div className='bg-[#b81c1c] w-[220px] h-screen py-4 flex flex-col items-start justify-between'>
       <div className='w-full px-2'>
         {/* Logo */}
-        <div className='bg-black w-[50px] h-[50px] p-2. rounded-full flex flex-col justify-center mb-6'>
-          <h1 className='text-2xl ml-2.5'>Tovah</h1>
+        <div>
+          
+          <div className='bg-black w-[50px] h-[50px] p-2. rounded-full flex flex-col justify-center mb-9'>
+            <h1 className='text-2xl ml-2.5'>Tovah</h1>
+          </div>
         </div>
 
         {/* Links */}

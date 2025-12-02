@@ -7,6 +7,7 @@ import IncomeSpendingBalance from "@/components/DashboardComponents/Home/IncomeS
 import nigeria from '../../../public/assets/nigeria.jpg'
 import america from '../../../public/assets/america.jpg'
 import britain from '../../../public/assets/britain.jpg'
+import Charts from "@/components/DashboardComponents/Home/Charts";
 
 export interface currenciesType {
   name: string;
@@ -44,12 +45,14 @@ export default function HomeMain() {
       <Navbar />
       <div className="p-5">
         <div>
-          <div className="flex items-baseline gap-5">
+          <div className="flex items-baseline gap-5 mb-9">
             <div className="w-[34%]">
               <Balance currencies={currencies} selected={selected} setSelected={setSelected} />
             </div>
             <IncomeSpendingBalance selected={selected} />
           </div>
+          {/* Chart */}
+          <Charts />
         </div>
       </div>
     </div>

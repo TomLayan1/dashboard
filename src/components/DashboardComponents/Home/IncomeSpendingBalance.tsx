@@ -2,7 +2,7 @@ import { Dispatch, SetStateAction } from 'react'
 import IncomeBalance from "./IncomeBalance";
 import SpendingBalance from "./SpendingBalance";
 import { currenciesType } from '@/app/dashboard/page'
-import TransactionPreview from './TransactionPreview';
+import Transactions from './Transactions';
 
 
 type IncomeSpendingBalancePropsType = {
@@ -16,7 +16,7 @@ export default function IncomeSpendingBalance({ selected }: IncomeSpendingBalanc
         <IncomeBalance selected={selected} />
         <SpendingBalance selected={selected} />
       </div>
-      <TransactionPreview />
+      <Transactions simplified count={5} />
     </div>
   )
 }
