@@ -1,5 +1,5 @@
 import { Bell, Search } from 'lucide-react'
-import user_pics from '../../../public/assets/user-pic.jpg'
+import user_pics from '../../../../public/assets/user-pic.jpg'
 import Image from 'next/image'
 
 export default function Navbar() {

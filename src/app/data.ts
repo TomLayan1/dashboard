@@ -324,5 +324,14 @@ export const transactions = [
     bank: "Fidelity Bank",
     date: "2025-11-21",
     time: "17:56"
-  }
+  },
+  {
+    id: "T037",
+    name: "ElectroWorld",
+    transaction_type: "credit",
+    amount: 180000,
+    bank: "Fidelity Bank",
+    date: "2025-11-21",
+    time: "17:56"
+  } 
 ];

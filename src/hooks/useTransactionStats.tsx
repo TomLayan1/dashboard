@@ -1,16 +1,17 @@
 import { transactions } from "@/app/data";
 
-export const totalCredits = transactions?.filter(transaction => (
+// Total amount that entered the account
+export const totalCredits: number = (transactions ?? [])?.filter(transaction => (
   transaction.transaction_type === 'credit'
 )).reduce((sum, transaction) => sum + transaction.amount, 0)
 
-export const totalDebits = transactions?.filter(transaction => (
+// Total amount that has left the account
+export const totalDebits: number = (transactions ?? [])?.filter(transaction => (
   transaction.transaction_type === 'debit'
 )).reduce((sum, transaction) => sum + transaction.amount, 0)
 
-export const balance = totalCredits - totalDebits;
-console.log('Balance', balance)
+// Account balance
+export const balance: number = totalCredits - totalDebits;
 
 // Growth relative to total incoming funds
-export const growth = (totalCredits / totalDebits) * 100
-console.log('Growth: ', growth,'%')
+export const growth: number = totalCredits === 0 ? 0 : (balance / totalCredits) * 100

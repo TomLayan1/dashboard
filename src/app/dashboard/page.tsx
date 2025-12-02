@@ -1,13 +1,13 @@
 "use client"
 import { useState } from "react";
-import Balance from "@/components/DashboardComponents/Home/Balance";
-import Navbar from "../../components/DashboardComponents/Navbar";
-import IncomeSpendingBalance from "@/components/DashboardComponents/Home/IncomeSpendingBalance";
+import Balance from "@/app/components/DashboardComponents/Home/Balance";
+import Navbar from "../components/DashboardComponents/Navbar";
+import IncomeSpendingBalance from "@/app/components/DashboardComponents/Home/IncomeSpendingBalance";
 
 import nigeria from '../../../public/assets/nigeria.jpg'
 import america from '../../../public/assets/america.jpg'
 import britain from '../../../public/assets/britain.jpg'
-import Charts from "@/components/DashboardComponents/Home/Charts";
+import Charts from "@/app/components/DashboardComponents/Home/Charts";
 
 export interface currenciesType {
   name: string;

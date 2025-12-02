@@ -3,7 +3,7 @@ import { useState, Dispatch, SetStateAction } from 'react'
 import { balance } from '@/hooks/useTransactionStats'
 import { Eye, EyeOff } from 'lucide-react'
 import Image from 'next/image'
-import AtmCard from '../../../app/svg/AtmCard'
+import AtmCard from '../../../svg/AtmCard'
 import { currenciesType } from '@/app/dashboard/page'
 
 type BalancePropsType = {
