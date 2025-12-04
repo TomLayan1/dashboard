@@ -4,9 +4,9 @@ import Image from 'next/image'
 
 export default function Navbar() {
   return (
-    <div className="w-full px-5 py-4 flex items-center justify-between">
+    <div className="w-full px-2.5 md:px-5 py-4 flex items-center justify-between">
       {/* Search */}
-      <div className='w-[300px] flex items-center border-[1px] rounded-lg'>
+      <div className='w-[205px] md:w-[300px] flex items-center border-[1px] rounded-lg'>
         <input
           type='text'
           placeholder='Search'
@@ -25,15 +25,15 @@ export default function Navbar() {
         </div>
 
         {/* User */}
-        <div className='flex items-center gap-2.5'>
-          <div className='w-[40px] h-[40px]'>
+        <div className='flex items-center gap-1.5 md:gap-2.5'>
+          <div className='w-[35px] md:w-[40px] h-[35px] md:h-[40px]'>
             <Image
               src={user_pics}
               alt="user-name"
               className='w-fit h-full rounded-full'
             />
           </div>
-          <div>
+          <div className='hidden md:block'>
             <p className='text-[#b81c1c] font-bold'>Chiamaka Nwafor</p>
             <p className='text-[#7a7878]'>Premium user</p>
           </div>

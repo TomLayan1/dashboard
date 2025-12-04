@@ -2,38 +2,40 @@
 import { transactions } from "@/app/data";
 
 type MonthlyRow = {
-  month: string;   // e.g. "Sep 2025"
+  month: string;   // label for chart: "Jan", "Feb", etc.
+  year: number;
   credit: number;
   debit: number;
 };
 
-const monthNames = [
-  "Jan", "Feb", "Mar", "Apr", "May", "Jun",
-  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
-];
+const MONTH_LABELS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-export const monthlyTransactionData: MonthlyRow[] = (() => {
-  const map: Record<string, MonthlyRow> = {};
+function buildMonthlyData(year: number): MonthlyRow[] {
+  // 1. Start with 12 months initialized to 0
+  const months: MonthlyRow[] = Array.from({ length: 12 }, (_, i) => ({
+    month: MONTH_LABELS[i],
+    year,
+    credit: 0,
+    debit: 0,
+  }));
 
+  // 2. Aggregate transactions into those months
   transactions.forEach((tx) => {
-    const [year, month] = tx.date.split("-"); // "2025-09-02" → ["2025","09","02"]
-    const monthIndex = Number(month) - 1;
-    const key = `${year}-${month}`;
-    const label = `${monthNames[monthIndex]} ${year}`; // "Sep 2025"
+    const [txYearStr, txMonthStr] = tx.date.split("-"); // "2025-09-02" → ["2025","09","02"]
+    const txYear = Number(txYearStr);
+    const txMonthIndex = Number(txMonthStr) - 1; // 0–11
 
-    if (!map[key]) {
-      map[key] = { month: label, credit: 0, debit: 0 };
-    }
+    if (txYear !== year || txMonthIndex < 0 || txMonthIndex > 11) return;
 
     if (tx.transaction_type === "credit") {
-      map[key].credit += tx.amount;
+      months[txMonthIndex].credit += tx.amount;
     } else {
-      map[key].debit += tx.amount;
+      months[txMonthIndex].debit += tx.amount;
     }
   });
 
-  // Ensure chronological order
-  return Object.entries(map)
-    .sort(([a], [b]) => (a < b ? -1 : 1))
-    .map(([, value]) => value);
-})();
+  return months;
+}
+
+// For this dataset everything is 2025:
+export const formatDate: MonthlyRow[] = buildMonthlyData(2025);

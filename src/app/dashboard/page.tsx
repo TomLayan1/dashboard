@@ -41,12 +41,12 @@ export default function HomeMain() {
   const [selected, setSelected] = useState(currencies[0]);
 
   return (
-    <div className="w-full h-full container mx-auto text-white">
+    <div className="w-full h-screen container mx-auto text-white">
       <Navbar />
-      <div className="p-5">
+      <div className="p-2.5 md:p-5">
         <div>
-          <div className="flex items-baseline gap-5 mb-9">
-            <div className="w-[34%]">
+          <div className="md:flex items-baseline gap-5 mb-9">
+            <div className="w-full md:w-[34%] mb-5 md:mb-0">
               <Balance currencies={currencies} selected={selected} setSelected={setSelected} />
             </div>
             <IncomeSpendingBalance selected={selected} />

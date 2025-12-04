@@ -5,7 +5,7 @@ export const transactions = [
     transaction_type: "credit",
     amount: 350000,
     bank: "GTBank",
-    date: "2025-09-02",
+    date: "2025-01-02",
     time: "09:15"
   },
   {
@@ -14,7 +14,7 @@ export const transactions = [
     transaction_type: "debit",
     amount: 24500,
     bank: "Fidelity Bank",
-    date: "2025-09-03",
+    date: "2025-01-03",
     time: "13:47"
   },
   {
@@ -23,7 +23,7 @@ export const transactions = [
     transaction_type: "debit",
     amount: 5200,
     bank: "Sterling Bank",
-    date: "2025-09-04",
+    date: "2025-01-04",
     time: "08:32"
   },
   {
@@ -32,7 +32,7 @@ export const transactions = [
     transaction_type: "debit",
     amount: 4300,
     bank: "Zenith Bank",
-    date: "2025-09-05",
+    date: "2025-02-05",
     time: "21:10"
   },
   {
@@ -41,7 +41,7 @@ export const transactions = [
     transaction_type: "credit",
     amount: 125000,
     bank: "Access Bank",
-    date: "2025-09-07",
+    date: "2025-02-07",
     time: "11:24"
   },
   {
@@ -50,7 +50,7 @@ export const transactions = [
     transaction_type: "debit",
     amount: 18000,
     bank: "UBA",
-    date: "2025-09-08",
+    date: "2025-02-08",
     time: "10:05"
   },
   {
@@ -59,7 +59,7 @@ export const transactions = [
     transaction_type: "debit",
     amount: 89000,
     bank: "First Bank",
-    date: "2025-09-10",
+    date: "2025-03-10",
     time: "16:52"
   },
   {
@@ -68,7 +68,7 @@ export const transactions = [
     transaction_type: "credit",
     amount: 90000,
     bank: "Union Bank",
-    date: "2025-09-12",
+    date: "2025-03-12",
     time: "14:18"
   },
   {
@@ -77,7 +77,7 @@ export const transactions = [
     transaction_type: "debit",
     amount: 3100,
     bank: "Polaris Bank",
-    date: "2025-09-15",
+    date: "2025-03-15",
     time: "07:59"
   },
   {
@@ -86,7 +86,7 @@ export const transactions = [
     transaction_type: "debit",
     amount: 15000,
     bank: "Stanbic IBTC",
-    date: "2025-09-18",
+    date: "2025-04-18",
     time: "06:45"
   },
   {
@@ -95,7 +95,7 @@ export const transactions = [
     transaction_type: "credit",
     amount: 210000,
     bank: "Keystone Bank",
-    date: "2025-09-20",
+    date: "2025-04-20",
     time: "12:03"
   },
   {
@@ -104,7 +104,7 @@ export const transactions = [
     transaction_type: "debit",
     amount: 135000,
     bank: "Ecobank",
-    date: "2025-09-23",
+    date: "2025-04-23",
     time: "19:27"
   },
 
@@ -114,7 +114,7 @@ export const transactions = [
     transaction_type: "credit",
     amount: 350000,
     bank: "GTBank",
-    date: "2025-10-01",
+    date: "2025-05-01",
     time: "09:12"
   },
   {
@@ -123,7 +123,7 @@ export const transactions = [
     transaction_type: "debit",
     amount: 450000,
     bank: "First Bank",
-    date: "2025-10-01",
+    date: "2025-05-01",
     time: "18:20"
   },
   {
@@ -132,7 +132,7 @@ export const transactions = [
     transaction_type: "debit",
     amount: 28000,
     bank: "UBA",
-    date: "2025-10-03",
+    date: "2025-05-03",
     time: "15:36"
   },
   {
@@ -141,7 +141,7 @@ export const transactions = [
     transaction_type: "debit",
     amount: 3000,
     bank: "Access Bank",
-    date: "2025-10-04",
+    date: "2025-06-04",
     time: "09:50"
   },
   {
@@ -150,7 +150,7 @@ export const transactions = [
     transaction_type: "credit",
     amount: 76000,
     bank: "Zenith Bank",
-    date: "2025-10-06",
+    date: "2025-06-06",
     time: "13:11"
   },
   {
@@ -159,7 +159,7 @@ export const transactions = [
     transaction_type: "debit",
     amount: 4500,
     bank: "Union Bank",
-    date: "2025-10-08",
+    date: "2025-06-08",
     time: "20:40"
   },
   {
@@ -168,7 +168,7 @@ export const transactions = [
     transaction_type: "debit",
     amount: 8400,
     bank: "Fidelity Bank",
-    date: "2025-10-10",
+    date: "2025-07-10",
     time: "17:08"
   },
   {
@@ -177,7 +177,7 @@ export const transactions = [
     transaction_type: "credit",
     amount: 62000,
     bank: "Stanbic IBTC",
-    date: "2025-10-12",
+    date: "2025-07-12",
     time: "10:29"
   },
   {
@@ -186,7 +186,7 @@ export const transactions = [
     transaction_type: "debit",
     amount: 5200,
     bank: "Keystone Bank",
-    date: "2025-10-15",
+    date: "2025-07-15",
     time: "22:14"
   },
   {
@@ -195,7 +195,7 @@ export const transactions = [
     transaction_type: "debit",
     amount: 19000,
     bank: "Ecobank",
-    date: "2025-10-18",
+    date: "2025-08-18",
     time: "09:03"
   },
   {
@@ -204,7 +204,7 @@ export const transactions = [
     transaction_type: "credit",
     amount: 300000,
     bank: "GTBank",
-    date: "2025-10-20",
+    date: "2025-08-20",
     time: "11:55"
   },
   {
@@ -213,7 +213,7 @@ export const transactions = [
     transaction_type: "debit",
     amount: 160000,
     bank: "Access Bank",
-    date: "2025-10-25",
+    date: "2025-08-25",
     time: "18:47"
   },
 
@@ -223,7 +223,7 @@ export const transactions = [
     transaction_type: "credit",
     amount: 350000,
     bank: "GTBank",
-    date: "2025-11-01",
+    date: "2025-09-01",
     time: "09:09"
   },
   {
@@ -232,7 +232,7 @@ export const transactions = [
     transaction_type: "debit",
     amount: 450000,
     bank: "First Bank",
-    date: "2025-11-01",
+    date: "2025-09-01",
     time: "18:25"
   },
   {
@@ -241,7 +241,7 @@ export const transactions = [
     transaction_type: "debit",
     amount: 36000,
     bank: "UBA",
-    date: "2025-11-03",
+    date: "2025-09-03",
     time: "14:02"
   },
   {
@@ -250,7 +250,7 @@ export const transactions = [
     transaction_type: "debit",
     amount: 97000,
     bank: "Fidelity Bank",
-    date: "2025-11-04",
+    date: "2025-10-04",
     time: "16:41"
   },
   {
@@ -259,7 +259,7 @@ export const transactions = [
     transaction_type: "credit",
     amount: 131000,
     bank: "Union Bank",
-    date: "2025-11-06",
+    date: "2025-10-06",
     time: "12:33"
   },
   {
@@ -268,7 +268,7 @@ export const transactions = [
     transaction_type: "debit",
     amount: 14000,
     bank: "Access Bank",
-    date: "2025-11-07",
+    date: "2025-10-07",
     time: "08:22"
   },
   {
@@ -304,7 +304,7 @@ export const transactions = [
     transaction_type: "debit",
     amount: 4500,
     bank: "Access Bank",
-    date: "2025-11-15",
+    date: "2025-12-15",
     time: "21:35"
   },
   {
@@ -313,7 +313,7 @@ export const transactions = [
     transaction_type: "credit",
     amount: 91000,
     bank: "First Bank",
-    date: "2025-11-18",
+    date: "2025-12-18",
     time: "13:44"
   },
   {
@@ -322,7 +322,7 @@ export const transactions = [
     transaction_type: "debit",
     amount: 180000,
     bank: "Fidelity Bank",
-    date: "2025-11-21",
+    date: "2025-12-21",
     time: "17:56"
   },
   {
@@ -331,7 +331,7 @@ export const transactions = [
     transaction_type: "credit",
     amount: 180000,
     bank: "Fidelity Bank",
-    date: "2025-11-21",
+    date: "2025-12-21",
     time: "17:56"
   } 
 ];

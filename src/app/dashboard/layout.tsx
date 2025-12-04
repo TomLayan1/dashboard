@@ -23,7 +23,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
       <div className="flex h-screen text-white">
       <Sidebar />
         <div className="flex-1 h-full">
-          <main className="flex-1 h-full overflow-y-auto">
+          <main className="flex-1 h-full overflow-y-auto scrollbar relative">
             {children}
           </main>
         </div>

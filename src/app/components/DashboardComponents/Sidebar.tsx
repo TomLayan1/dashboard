@@ -30,28 +30,30 @@ export default function Sidebar() {
   }
 
   return(
-    <div className='bg-[#b81c1c] w-[220px] h-screen py-4 flex flex-col items-start justify-between'>
+    <div className='bg-[#b81c1c] w-[80px md:w-[220px] h-screen py-4 flex flex-col items-start justify-between'>
       <div className='w-full px-2'>
         {/* Logo */}
         <div>
-          
-          <div className='bg-black w-[50px] h-[50px] p-2. rounded-full flex flex-col justify-center mb-9'>
+          <div className='w-9 h-9 bg-gradient-to-r from-black to-white flex items-center justify-center rounded-full mx-auto md:hidden mb-9'>
+            <div className='w-6 h-6 bg-[#b81c1c] rounded-full'></div>
+          </div>
+          <div className='bg-black w-[50px] h-[50px] p-2. rounded-full hidden md:flex flex-col justify-center mb-9'>
             <h1 className='text-2xl ml-2.5'>Tovah</h1>
           </div>
         </div>
 
         {/* Links */}
-        <div className='w-full flex flex-col'>
+        <div className='w-full flex flex-col items-center md:items-start'>
           {sidebarLinks?.map((link, i) => {
             return (
               <Link
                 key={i}
                 href={link.href}
                 onClick={() => handleCurrentLink(link.name)}
-                className={`w-full px-4 py-2 rounded-full flex items-center gap-2 ${currentPage === link.name ? 'bg-black' : ''}`}
+                className={`w-full px-2 md:px-4 py-2 rounded-full flex items-center justify-center md:justify-start gap-2 ${currentPage === link.name ? 'bg-black' : ''}`}
               >
                 <link.icon size={17} />
-                <p className='text-[14px]'>{link.name}</p>
+                <p className='text-[14px] hidden md:block'>{link.name}</p>
               </Link>
             )
           })}
@@ -59,8 +61,8 @@ export default function Sidebar() {
       </div>
 
       {/* Sign out button */}
-      <div className='flex items-center gap-2'>
-        <button className='ml-4 text-[15px] cursor-pointer font-bold'>Sign out</button>
+      <div className='flex items-center mx-auto md:mx-0 gap-2'>
+        <button className='ml-4 text-[15px] cursor-pointer font-bold hidden md:block'>Sign out</button>
         <LogOut size={17} />
       </div>
     </div>
