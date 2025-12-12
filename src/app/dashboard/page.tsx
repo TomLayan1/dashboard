@@ -41,7 +41,7 @@ export default function HomeMain() {
   const [selected, setSelected] = useState(currencies[0]);
 
   return (
-    <div className="w-full h-screen container mx-auto text-white">
+    <div className="w-full h-screen text-white">
       <Navbar />
       <div className="p-2.5 md:p-5">
         <div>

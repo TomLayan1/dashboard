@@ -1,5 +1,5 @@
 export default function Bank() {
   return (
-    <div></div>
+    <div>Bank</div>
   )
 }

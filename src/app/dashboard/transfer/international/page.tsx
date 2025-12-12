@@ -1,5 +1,5 @@
 export default function International() {
   return (
-    <div></div>
+    <div>International</div>
   )
 }

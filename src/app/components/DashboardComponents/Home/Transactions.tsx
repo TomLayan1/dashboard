@@ -11,7 +11,7 @@ type TransactionPreviewPropsType = {
 
 export default function Transactions({ simplified, count }: TransactionPreviewPropsType) {
   return (
-    <div className={`${simplified ? 'p-3' : 'p-5'} bg-[#3e3e3e3f] rounded-3xl`}>
+    <div className={`${simplified ? 'p-3' : 'p-5'} bg-[#3e3e3ea1] rounded-3xl`}>
       {simplified && <div className="flex items-center justify-between mb-5">
         <p className="text-[15px]">Transaction</p>
         <Link href={"/dashboard/transactions"} className="text-[15px] cursor-pointer">See all</Link>
