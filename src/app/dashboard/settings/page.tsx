@@ -1,17 +1,33 @@
 "use client"
-import { useRef } from "react"
+import { useRef, useState } from "react"
 import Image from "next/image"
 import { Edit } from "lucide-react"
 import user_pic from '../../../../public/assets/user-pic.jpg'
+import ProfilePic from "@/app/components/DashboardComponents/Settings/ProfilePic"
+import ProfileInfo from "@/app/components/DashboardComponents/Settings/ProfileInfo"
 
 
 
 export default function Settings() {
+  const [profilePic, setProfilePic] = useState<string>('')
   const fileInputRef = useRef<HTMLInputElement | null>(null);
 
+  // Handle clicking file input
   const handleFileInput = () => {
     fileInputRef.current?.click();
   };
+
+  // Handle image selection and preview
+  const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    if (!file) return
+
+    const reader = new FileReader()
+    reader.onload = () => {
+      setProfilePic(reader.result as string)
+    }
+    reader.readAsDataURL(file)
+  }
 
   return (
     <div className="py-5">
@@ -19,29 +35,12 @@ export default function Settings() {
         <p className="text-3xl">Settings</p>
       </div>
 
-      <div>
-        <div className="w-[200px] h-[200px] rounded-2xl relative overflow-hidden image_container">
-          <Image
-            src={user_pic}
-            alt="Chiooma"
-            className="w-fit h-full"
-          />
-          <div className="w-full h-1/2 hover: bg-[#00000022] absolute bottom-0 left-0 flex items-center justify-center edit_modal">
-            <button
-              onClick={handleFileInput}
-              className="flex flex-col items-center cursor-pointer"
-            >
-              <Edit size={14} />
-              <p className="text-[13px]">Change profile image</p>
-            </button>
-            <input
-              type='file'
-              ref={fileInputRef}
-              accept="image/png, image/jpeg, image/jpg"
-              className="hidden"
-            />
-          </div>
+      <div className="flex">
+        <div className="flex flex-col gap-9">
+          <ProfilePic />
+          <ProfileInfo />
         </div>
+        <div></div>
       </div>
     </div>
   )
