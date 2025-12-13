@@ -2,7 +2,7 @@ import { Dispatch, SetStateAction } from 'react'
 import IncomeBalance from "./IncomeBalance";
 import SpendingBalance from "./SpendingBalance";
 import { currenciesType } from '@/app/dashboard/page'
-import Transactions from './Transactions';
+import Transactions from '../Transactions/Transactions';
 
 
 type IncomeSpendingBalancePropsType = {

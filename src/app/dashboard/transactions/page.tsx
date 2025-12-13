@@ -1,4 +1,4 @@
-import Transactions from "@/app/components/DashboardComponents/Home/Transactions";
+import Transactions from "@/app/components/DashboardComponents/Transactions/Transactions";
 import Image from "next/image";
 import background from '../../../../public/assets/transactions-bg.jpg'
 

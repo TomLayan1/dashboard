@@ -43,7 +43,7 @@ export default function HomeMain() {
   return (
     <div className="w-full h-screen text-white">
       <Navbar />
-      <div className="p-2.5 md:p-5">
+      <div className="">
         <div>
           <div className="md:flex items-baseline gap-5 mb-9">
             <div className="w-full md:w-[34%] mb-5 md:mb-0">
