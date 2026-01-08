@@ -1,7 +1,7 @@
 "use client"
-import { Home, Wallet, List, Send, CreditCard, DollarSign, BarChart2, Lock, Settings, HelpCircle, LogOut } from 'lucide-react';
+import { Home, List, Send, Settings, LogOut } from 'lucide-react';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 type SidebarPropsType = {
   getActiveState: () => "/dashboard" | "/dashboard/transfer" | "/dashboard/settings" | "" | "/dashboard/transaction"

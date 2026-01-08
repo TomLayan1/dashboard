@@ -1,5 +1,13 @@
+import Hero from "./components/Home/Hero";
+import Navbar from "./components/Navbar";
+import StackCards from "./svg/StackCards";
+
   export default function Home() {
     return(
-      <main></main>
+      <main>
+        <Navbar />
+        
+        <Hero />
+      </main>
     )
   }
