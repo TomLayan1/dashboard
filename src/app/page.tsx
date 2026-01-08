@@ -6,8 +6,9 @@ import StackCards from "./svg/StackCards";
     return(
       <main>
         <Navbar />
-        
-        <Hero />
+        <div className="container w-[98%] mx-auto">
+          <Hero />
+        </div>
       </main>
     )
   }
