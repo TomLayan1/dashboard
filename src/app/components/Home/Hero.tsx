@@ -38,8 +38,8 @@ export default function Hero() {
         <h1 className="text-7xl font-bold leading-24 tracking-wider mb-6">Smarter banking<br />starts here</h1>
         <p className="text-lg mb-6">Send money, pay bills, save smarter,<br/>and stay in control of your finances all from one powerful app</p>
         <div className="flex flex-col md:flex-row gap-6">
-          <button className="w-[180px] text-[15px] border py-2.5 cursor-pointer">Create Free Account</button>
-          <button className="w-[180px] text-[15px] border py-2.5 cursor-pointer">Download the App</button>
+          <button className="w-[180px] text-[15px] border py-2.5 rounded-xl cursor-pointer">Create Free Account</button>
+          <button className="w-[180px] text-[15px] border py-2.5 rounded-xl cursor-pointer">Download the App</button>
         </div>
       </div>
       <div className="relative w-[500px] h-[500px] overflow-hidden">

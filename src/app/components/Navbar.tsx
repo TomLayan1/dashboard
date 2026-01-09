@@ -22,7 +22,7 @@ const navLinks = [
 
 export default function Navbar() {
   return(
-    <div className="bg-[#0a0a0a] w-full flex items-center justify-between py-4 px-9 fixed top-0 left-0">
+    <div className="bg-[#0a0a0a] w-full flex items-center justify-between py-4 px-9 fixed top-0 left-0 z-50">
       {/* Links */}
       <div className="flex gap-6">
         {navLinks?.map(link => (
@@ -46,7 +46,7 @@ export default function Navbar() {
       </div>
 
       {/* Auth Btn */}
-      <button className="w-[150px] bg-[#b81c1c] border-[#b81c1c] border-2 py-2.5 cursor-pointer">Get started</button>
+      <button className="w-[150px] bg-[#b81c1c] py-2.5 rounded-md cursor-pointer">Get started</button>
     </div>
   )
 }

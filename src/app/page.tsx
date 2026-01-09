@@ -1,4 +1,6 @@
+import BoldStatement from "./components/Home/BoldStatement";
 import Hero from "./components/Home/Hero";
+import WhyTovah from "./components/Home/WhyTovah";
 import Navbar from "./components/Navbar";
 import StackCards from "./svg/StackCards";
 
@@ -8,6 +10,10 @@ import StackCards from "./svg/StackCards";
         <Navbar />
         <div className="container w-[98%] mx-auto">
           <Hero />
+        </div>
+        <BoldStatement />
+        <div className="container w-[98%] mx-auto">
+          <WhyTovah />
         </div>
       </main>
     )
