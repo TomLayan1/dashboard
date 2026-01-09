@@ -8,7 +8,7 @@ export default function ComeJoinUs () {
           </div>
         </div>
       </div>
-      <div className="w-full h-full flex flex-col items-center justify-center absolute top-0 left-0">
+      <div className="w-full h-full mx-auto flex flex-col items-center justify-center absolute top-0 left-0">
         <p className="w-[790px] text-5xl text-center font-bold leading-16 mb-9">Over 3 <span className="text-black">million</span> people trust us with their <span className="text-black">business finance</span></p>
         <button className="w-[160px] bg-black text-white py-2.5 rounded-md cursor-pointer">Come Join Us</button>
       </div>

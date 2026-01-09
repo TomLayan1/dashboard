@@ -24,8 +24,8 @@ export default function WhyTovah() {
         <button className="bg-[#b81c1c] w-[150px] font-bold py-2.5 rounded-md cursor-pointer">Get started</button>
       </div>
       <div className="flex-1 grid grid-cols-2 gap-8">
-        {REASONS?.map(reason => (
-          <div className="bg-[#222121a1] rounded-2xl p-4">
+        {REASONS?.map((reason, i) => (
+          <div key={i} className="bg-[#222121a1] rounded-2xl p-4">
             <p className="text-2xl font-bold leading-8 mb-5">{reason.reason}</p>
             <p className="text-[15px] leading-6">{reason.explain}</p>
           </div>
