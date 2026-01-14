@@ -26,9 +26,9 @@ export default function Balance({ currencies, selected, setSelected }: BalancePr
   const FinalBalance = balance / selected?.rate;
 
   return(
-    <div className=''>
-      <p className="text-3xl mb-7">Welcome back, <span className="font-bold">Chiamake!</span></p>
-      <div className="w-full bg-[#3e3e3e3f] rounded-3xl relative p-3">
+    <div className='w-full'>
+      <p className="text-xl md:text-2xl lg:text-3xl mb-7">Welcome back, <span className="font-bold">Chiamake!</span></p>
+      <div className="w-full bg-[#3e3e3e3f] rounded-3xl relative px-3 pt-3 pb-1.5">
         <div className='flex items-center justify-between mb-2'>
           <p className='text-[17px] font-bold'>Total Balance</p>
           <div className="w-[97px] relative">

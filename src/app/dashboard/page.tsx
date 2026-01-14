@@ -43,10 +43,10 @@ export default function HomeMain() {
   return (
     <div className="w-full h-screen text-white">
       <Navbar />
-      <div className="">
+      <div>
         <div>
-          <div className="md:flex items-baseline gap-5 mb-9">
-            <div className="w-full md:w-[34%] mb-5 md:mb-0">
+          <div className="flex flex-col lg:flex-row lg:items-baseline gap-5 mb-9">
+            <div className="w-full md:w-[70%] lg:w-[34%] mb-5 md:mb-0">
               <Balance currencies={currencies} selected={selected} setSelected={setSelected} />
             </div>
             <IncomeSpendingBalance selected={selected} />

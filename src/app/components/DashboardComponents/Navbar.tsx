@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function Navbar() {
   return (
-    <div className="w-full px-2.5 md:px-5 py-4 flex items-center justify-between">
+    <div className="w-full px-2.5 lg:px-5 py-4 flex items-center justify-between">
       {/* Search */}
       <div className='w-[205px] md:w-[300px] flex items-center border-[1px] rounded-lg'>
         <input
@@ -33,7 +33,7 @@ export default function Navbar() {
               className='w-fit h-full rounded-full'
             />
           </div>
-          <div className='hidden md:block'>
+          <div className='hidden lg:block'>
             <p className='text-[#b81c1c] font-bold'>Chiamaka Nwafor</p>
             <p className='text-[#7a7878]'>Premium user</p>
           </div>

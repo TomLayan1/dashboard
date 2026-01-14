@@ -6,7 +6,7 @@ export default function Growth() {
   const angle = (value / 100) * 360 // 0–100% → 0–360deg
 
   return (
-    <div className="w-full md:w-[25%] bg-[#3e3e3e3f] rounded-3xl py-6 px-3.5">
+    <div className="w-full md:w-[50%] lg:w-[25%] bg-[#3e3e3e3f] rounded-3xl py-6 px-3.5">
       <p className="mb-5">Savings Rate</p>
 
       {/* Outer circle with dynamic red arc */}

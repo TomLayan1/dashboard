@@ -11,7 +11,7 @@ type IncomeSpendingBalancePropsType = {
 
 export default function IncomeSpendingBalance({ selected }: IncomeSpendingBalancePropsType) {
   return(
-    <div className="flex-1">
+    <div className="w-full lg:flex-1">
       <div className="w-full flex items-center justify-between mb-5">
         <IncomeBalance selected={selected} />
         <SpendingBalance selected={selected} />

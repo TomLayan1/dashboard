@@ -21,8 +21,8 @@ export default function Transactions({ simplified, count }: TransactionPreviewPr
             {transactions?.slice(0, count).map((transaction, i) => (
               <tr className={`border-0 ${i === 0 ? '' : 'border-t'} border-[#606060]`}>
                 <td className="text-[13px] py-[6.5px]">{transaction.name}</td>
-                <td className="text-[13px] py-[6.5px]">{transaction.bank}</td>
-                <td className="text-[13px] py-[6.5px]">{transaction.time}</td>
+                <td className="text-[13px] py-[6.5px] hidden md:block">{transaction.bank}</td>
+                {!simplified && <td className="text-[13px] py-[6.5px] hidden md:block">{transaction.time}</td>}
                 <td className="text-[13px] py-[6.5px]">₦{transaction.amount.toLocaleString()}</td>
                 {transaction.transaction_type === 'credit' ? <Income /> : <Spending />}
               </tr>
